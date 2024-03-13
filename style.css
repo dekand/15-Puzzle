@@ -1,0 +1,53 @@
+body{
+   display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 10%;
+}
+.field{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: darkseagreen;
+    position: relative;
+}
+.field__cell{
+    width: 81.25px;
+    height: 81.25px;
+    position: absolute;
+    border-radius: 5px;
+}
+.field__cell--null{
+    background-color: cadetblue;
+}
+.field__cell--tile{
+    background-color: #20B2AA;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: fantasy;
+    font-size: 30px;
+    transition: 1s; 
+}
+#modal {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-family: sans-serif;
+}
+#modal.modal--visible{
+    visibility:visible;
+    opacity:1;
+}
